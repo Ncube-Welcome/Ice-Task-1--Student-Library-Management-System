@@ -23,7 +23,7 @@ namespace StudentLibraryManagement
             => Console.WriteLine($"STUB: Added book '{book.Title}'");
 
         public void DisplayBooks()
-            => Console.WriteLine("STUB: Displaying all books...");
+            => Console.WriteLine("STUB: Displaying all books..."); // book list with overriden .ToString to be used
 
         public List<Book> SearchBook(string titleSubstring)
             => new List<Book>();
@@ -134,7 +134,7 @@ namespace StudentLibraryManagement
             if (!decimal.TryParse(Console.ReadLine(), out decimal fee))
                 throw new FormatException("Daily fee must be a decimal number.");
 
-            var book = new Book(id, title, author, category, fee);
+            var book = new Book(id, title, author, category, fee, true);
             library.AddBook(book);
         }
 
