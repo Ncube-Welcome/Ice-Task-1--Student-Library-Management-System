@@ -8,23 +8,23 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ThinkPad L15\\.nuget\\packages\\": {},
+    "C:\\Users\\emeris\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ThinkPad L15\\source\\repos\\StudentLibraryManagment\\StudentLibraryManagment.csproj",
+      "projectUniqueName": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\StudentLibraryManagment.csproj",
       "projectName": "StudentLibraryManagment",
-      "projectPath": "C:\\Users\\ThinkPad L15\\source\\repos\\StudentLibraryManagment\\StudentLibraryManagment.csproj",
-      "packagesPath": "C:\\Users\\ThinkPad L15\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ThinkPad L15\\source\\repos\\StudentLibraryManagment\\obj\\",
+      "projectPath": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\StudentLibraryManagment.csproj",
+      "packagesPath": "C:\\Users\\emeris\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ThinkPad L15\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\emeris\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -74,7 +74,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

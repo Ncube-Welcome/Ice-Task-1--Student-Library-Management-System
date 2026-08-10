@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54B2EED1-1BAB-3488-0D82-AF69ABC5DBCA}|StudentLibraryManagment.csproj|c:\\users\\emeris\\documents\\github\\ice-task-1--student-library-management-system\\studentlibrarymanagment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B2EED1-1BAB-3488-0D82-AF69ABC5DBCA}|StudentLibraryManagment.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B2EED1-1BAB-3488-0D82-AF69ABC5DBCA}|StudentLibraryManagment.csproj|c:\\users\\emeris\\documents\\github\\ice-task-1--student-library-management-system\\studentlibrarymanagment\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B2EED1-1BAB-3488-0D82-AF69ABC5DBCA}|StudentLibraryManagment.csproj|solutionrelative:book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA4AAACAAAAAAIAgwA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T14:03:42.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\Book.cs",
+              "RelativeDocumentMoniker": "Book.cs",
+              "ToolTip": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\Book.cs",
+              "RelativeToolTip": "Book.cs",
+              "ViewState": "AgIAAAgAAAAQMzMzM3M/wBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T13:42:14.941Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

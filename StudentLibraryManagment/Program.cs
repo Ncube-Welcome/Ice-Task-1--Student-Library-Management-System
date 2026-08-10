@@ -10,32 +10,16 @@ namespace StudentLibraryManagement
     public record StudentRecord(string StudentNumber, string FullName, string Course);
 
     // TEMPORARY STUBS – REMOVE WHEN REAL CLASSES ARE READY 
-    public class Book
-    {
-        public int BookId { get; set; }
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public BookCategory Category { get; set; }
-        public decimal DailyFee { get; set; }
-        public bool IsAvailable { get; set; }
 
-        public Book(int bookId, string title, string author, BookCategory category, decimal dailyFee)
-        {
-            BookId = bookId;
-            Title = title;
-            Author = author;
-            Category = category;
-            DailyFee = dailyFee;
-            IsAvailable = true;
-        }
-    }
+    
+    
 
     public class Library
     {
         public void RegisterStudent(StudentRecord student)
             => Console.WriteLine($"STUB: Registered student {student.FullName}");
 
-        public void AddBook(Book book)
+        public void AddBook(Book book = new Book())
             => Console.WriteLine($"STUB: Added book '{book.Title}'");
 
         public void DisplayBooks()
