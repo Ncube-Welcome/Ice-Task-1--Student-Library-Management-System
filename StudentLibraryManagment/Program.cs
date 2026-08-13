@@ -16,6 +16,7 @@ namespace StudentLibraryManagement
     class Program
     {
         static Library library = new Library();
+        Book books = new Book();
 
         static void Main(string[] args)
         {
@@ -118,10 +119,9 @@ namespace StudentLibraryManagement
 
             if (!int.TryParse(Console.ReadLine(), out int id))
                 throw new FormatException("Book ID must be an integer.");
-
-            int search = Convert.ToInt32(Console.ReadLine());
-            var results = library.SearchBook(search);
-            Console.WriteLine($"Found {results.Count} book(s).");
+            
+            var result = library.SearchBook(id);
+            Console.WriteLine($"Book Found: {result?.ToString()}");
         }
 
         static void RemoveBook()
@@ -149,7 +149,25 @@ namespace StudentLibraryManagement
             if (!int.TryParse(Console.ReadLine(), out int id2))
                 throw new FormatException("Invalid ID.");
 
-            library.CompareBooks(id1, id2);
+            if (id1 == id2)
+            {
+                Console.WriteLine("Book 1 == Book 2: True");
+            }
+            else Console.WriteLine("Book 1 == Book 2: False");
+
+            if (id1 > id2)
+            {
+                Console.WriteLine("Book 1 > Book 2: True");
+            }
+            else Console.WriteLine("Book 1 > Book 2: False");
+
+            if (id1 < id2)
+            {
+                Console.WriteLine("Book 1 < Book 2 : True");
+            }
+            else Console.WriteLine("Book 1 < Book 2: False");
+
+            
         }
     }
 }
