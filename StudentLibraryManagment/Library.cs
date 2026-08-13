@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace StudentLibraryManagment
+namespace StudentLibraryManagement
 {
     internal class Library
     {
@@ -22,14 +22,18 @@ namespace StudentLibraryManagment
         }
 
         //Removes a book using its Book ID
-        public void RemoveBook(int bookId)
+        public bool RemoveBook(int bookId)
         {
             Book? book = Books.FirstOrDefault(b => b.BookId == bookId);
 
             if (book == null)
-                throw new ArgumentException("Book not found.");
+            {
+               throw new ArgumentException("Book not found.");
+                return false;
+            }
 
             Books.Remove(book);
+            return true;
         }
 
         //Searches for a book using its Book ID

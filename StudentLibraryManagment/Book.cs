@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 
-namespace StudentLibraryManagment
+namespace StudentLibraryManagement
 {
     internal class Book
     {
@@ -20,7 +20,7 @@ namespace StudentLibraryManagment
 
         }
         
-        public Book(int bookId, string title, string author, BookCategory category, decimal dailyFee)
+        public Book(int bookId, string title, string author, BookCategory category, decimal dailyFee, bool isAvailable)
         {
             BookId = bookId;
             Title = title;
@@ -72,28 +72,27 @@ namespace StudentLibraryManagment
 
         public static bool operator ==(Book book1, Book book2)
         {
-            if (book1 == null || book2 == null) return false;
+            if (ReferenceEquals(book1, book2))
+                return false;
 
             return book1.BookId == book2.BookId;
         }
 
         public static bool operator !=(Book book1, Book book2)
         {
-            if (book1 == null || book2 == null) return false;
-
             return book1.BookId != book2.BookId;
         }
 
         public static bool operator >(Book book1, Book book2)
         {
-            if (book1 == null || book2 == null) return false;
+            if (book1 is null || book2 is null) return false;
 
             return book1.DailyFee > book2.DailyFee;
         }
 
         public static bool operator <(Book book1, Book book2)
         {
-            if (book1 == null || book2 == null) return false;
+            if (book1 is null || book2 is null) return false;
 
             return book1.DailyFee < book2.DailyFee;
         }

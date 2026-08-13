@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using StudentLibraryManagement;
 
 namespace StudentLibraryManagement
 {
@@ -9,48 +10,16 @@ namespace StudentLibraryManagement
     // STUDENT RECORD
     public record StudentRecord(string StudentNumber, string FullName, string Course);
 
-    // TEMPORARY STUBS – REMOVE WHEN REAL CLASSES ARE READY 
-
     
-    
-
-    public class Library
-    {
-        public void RegisterStudent(StudentRecord student)
-            => Console.WriteLine($"STUB: Registered student {student.FullName}");
-
-        public void AddBook(Book book = new Book())
-            => Console.WriteLine($"STUB: Added book '{book.Title}'");
-
-        public void DisplayBooks()
-            => Console.WriteLine("STUB: Displaying all books..."); // book list with overriden .ToString to be used
-
-        public List<Book> SearchBook(string titleSubstring)
-            => new List<Book>();
-
-        public bool RemoveBook(int bookId)
-        {
-            Console.WriteLine($"STUB: Removing book with ID {bookId}");
-            return true;
-        }
-
-        public decimal CalculateTotalBorrowingFee()
-        {
-            Console.WriteLine("STUB: Calculating total fee...");
-            return 0m;
-        }
-
-        public void CompareBooks(int id1, int id2)
-            => Console.WriteLine($"STUB: Comparing books {id1} and {id2}");
-    }
 
     //  Menu and user input
     class Program
     {
-        private static Library library = new Library();
+        static Library library = new Library();
 
         static void Main(string[] args)
         {
+
             bool exit = false;
             while (!exit)
             {
@@ -145,8 +114,12 @@ namespace StudentLibraryManagement
 
         static void SearchBook()
         {
-            Console.Write("Enter title to search (or part of it): ");
-            string search = Console.ReadLine();
+            Console.Write("Enter book ID to search: ");
+
+            if (!int.TryParse(Console.ReadLine(), out int id))
+                throw new FormatException("Book ID must be an integer.");
+
+            int search = Convert.ToInt32(Console.ReadLine());
             var results = library.SearchBook(search);
             Console.WriteLine($"Found {results.Count} book(s).");
         }
