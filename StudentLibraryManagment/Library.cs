@@ -32,7 +32,7 @@ namespace StudentLibraryManagement
 
             if (book == null) 
             {
-                throw new ArgumentException("Book not found.");
+                return false;
             }
 
             Books.Remove(book);
@@ -62,9 +62,7 @@ namespace StudentLibraryManagement
         public decimal CalculateTotalBorrowingFee()
         {
             // Adds the daily fee of all borrowed books
-            return Books
-                .Where(book => !book.IsAvailable)
-                .Sum(book => book.DailyFee);
+            return Books.Sum(book => book.DailyFee);
         }
     }
 }
