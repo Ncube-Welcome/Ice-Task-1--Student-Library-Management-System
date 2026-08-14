@@ -1,6 +1,7 @@
 ﻿using StudentLibraryManagement;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace StudentLibraryManagement
@@ -18,6 +19,9 @@ namespace StudentLibraryManagement
 
         public void AddBook(Book book)
         {
+            if (Books.Any(b => b.BookId == book.BookId))
+                throw new ArgumentException($"A book with ID {book.BookId} already exists.");
+
             Books.Add(book);
         }
 
@@ -26,10 +30,9 @@ namespace StudentLibraryManagement
         {
             Book? book = Books.FirstOrDefault(b => b.BookId == bookId);
 
-            if (book == null)
+            if (book == null) 
             {
-               throw new ArgumentException("Book not found.");
-                return false;
+                throw new ArgumentException("Book not found.");
             }
 
             Books.Remove(book);
@@ -63,6 +66,5 @@ namespace StudentLibraryManagement
                 .Where(book => !book.IsAvailable)
                 .Sum(book => book.DailyFee);
         }
-
     }
 }

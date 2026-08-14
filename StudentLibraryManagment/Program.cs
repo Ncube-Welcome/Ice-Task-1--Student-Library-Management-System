@@ -7,12 +7,9 @@ namespace StudentLibraryManagement
     // This is the ENUM 
     public enum BookCategory { Technology, Science, Literature, History, Other }
 
-    // STUDENT RECORD
     public record StudentRecord(string StudentNumber, string FullName, string Course);
 
-    
-
-    //  Menu and user input
+    // Menu and user input
     class Program
     {
         static Library library = new Library();
@@ -20,7 +17,6 @@ namespace StudentLibraryManagement
 
         static void Main(string[] args)
         {
-
             bool exit = false;
             while (!exit)
             {
@@ -104,7 +100,11 @@ namespace StudentLibraryManagement
             if (!decimal.TryParse(Console.ReadLine(), out decimal fee))
                 throw new FormatException("Daily fee must be a decimal number.");
 
-            var book = new Book(id, title, author, category, fee, true);
+            Console.Write("Is the book currently available? (y/n): "); 
+            string availInput = Console.ReadLine();
+            bool isAvailable = !string.Equals(availInput?.Trim(), "n", StringComparison.OrdinalIgnoreCase);
+
+            var book = new Book(id, title, author, category, fee, isAvailable);
             library.AddBook(book);
         }
 
@@ -119,9 +119,18 @@ namespace StudentLibraryManagement
 
             if (!int.TryParse(Console.ReadLine(), out int id))
                 throw new FormatException("Book ID must be an integer.");
-            
+
             var result = library.SearchBook(id);
-            Console.WriteLine($"Book Found: {result?.ToString()}");
+
+            if (result == null)
+            {
+                Console.WriteLine("Book not found.");
+            }
+            else
+            {
+                Console.WriteLine("Book Found:");
+                Console.WriteLine(result);
+            }
         }
 
         static void RemoveBook()
@@ -150,24 +159,19 @@ namespace StudentLibraryManagement
                 throw new FormatException("Invalid ID.");
 
             if (id1 == id2)
-            {
                 Console.WriteLine("Book 1 == Book 2: True");
-            }
-            else Console.WriteLine("Book 1 == Book 2: False");
+            else
+                Console.WriteLine("Book 1 == Book 2: False");
 
             if (id1 > id2)
-            {
                 Console.WriteLine("Book 1 > Book 2: True");
-            }
-            else Console.WriteLine("Book 1 > Book 2: False");
+            else
+                Console.WriteLine("Book 1 > Book 2: False");
 
             if (id1 < id2)
-            {
                 Console.WriteLine("Book 1 < Book 2 : True");
-            }
-            else Console.WriteLine("Book 1 < Book 2: False");
-
-            
+            else
+                Console.WriteLine("Book 1 < Book 2: False");
         }
     }
 }

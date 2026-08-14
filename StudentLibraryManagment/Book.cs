@@ -19,7 +19,7 @@ namespace StudentLibraryManagement
         {
 
         }
-        
+
         public Book(int bookId, string title, string author, BookCategory category, decimal dailyFee, bool isAvailable)
         {
             BookId = bookId;
@@ -27,10 +27,8 @@ namespace StudentLibraryManagement
             Author = author;
             Category = category;
             DailyFee = dailyFee;
-            IsAvailable = true;
+            IsAvailable = isAvailable; 
         }
-
-        
 
         public override string ToString()
         {
@@ -44,8 +42,8 @@ namespace StudentLibraryManagement
                  $"\nTitle: {Title}" +
                  $"\nAuthor: {Author}" +
                  $"\nCategory: {Category}" +
-                 $"\nDaily Fee: {DailyFee: C}" +
-                 $"Available: {available}";
+                 $"\nDaily Fee: {DailyFee:C}" +      
+                 $"\nAvailable: {available}";          
 
         }
 
@@ -56,7 +54,6 @@ namespace StudentLibraryManagement
 
         public override bool Equals(object? obj)
         {
-            
             if (obj is Book newBook)
             {
                 return BookId == newBook.BookId;
@@ -72,15 +69,19 @@ namespace StudentLibraryManagement
 
         public static bool operator ==(Book book1, Book book2)
         {
+            // FIX: proper null-safe equality
             if (ReferenceEquals(book1, book2))
-                return false;
+                return true;               
+
+            if (book1 is null || book2 is null)
+                return false;              
 
             return book1.BookId == book2.BookId;
         }
 
         public static bool operator !=(Book book1, Book book2)
         {
-            return book1.BookId != book2.BookId;
+            return !(book1 == book2); 
         }
 
         public static bool operator >(Book book1, Book book2)
@@ -96,7 +97,5 @@ namespace StudentLibraryManagement
 
             return book1.DailyFee < book2.DailyFee;
         }
-
-        
     }
 }
