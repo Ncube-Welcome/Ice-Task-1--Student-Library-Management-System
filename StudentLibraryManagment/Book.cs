@@ -15,18 +15,22 @@ namespace StudentLibraryManagement
         public decimal DailyFee { get; set; }
         public bool IsAvailable { get; set; }
 
-        public Book()
-        {
-
-        }
-
         public Book(int bookId, string title, string author, BookCategory category, decimal dailyFee, bool isAvailable)
         {
+            if(bookId < 0) throw new ArgumentException("BookID must be greater than or equal to 0");
             BookId = bookId;
+
+            if(string.IsNullOrWhiteSpace(title)) throw new ArgumentNullException("Title is cannot be empty");
             Title = title;
+
+            if (string.IsNullOrWhiteSpace(author)) throw new ArgumentNullException("Title is cannot be empty");
             Author = author;
+
             Category = category;
+
+            if (dailyFee < 0) throw new ArgumentException("Daily Fee cannot be negative");
             DailyFee = dailyFee;
+
             IsAvailable = isAvailable; 
         }
 
@@ -69,7 +73,7 @@ namespace StudentLibraryManagement
 
         public static bool operator ==(Book book1, Book book2)
         {
-            // FIX: proper null-safe equality
+           
             if (ReferenceEquals(book1, book2))
                 return true;               
 

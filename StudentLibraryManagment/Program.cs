@@ -13,8 +13,7 @@ namespace StudentLibraryManagement
     class Program
     {
         static Library library = new Library();
-        Book books = new Book();
-
+        
         static void Main(string[] args)
         {
             bool exit = false;
@@ -158,17 +157,20 @@ namespace StudentLibraryManagement
             if (!int.TryParse(Console.ReadLine(), out int id2))
                 throw new FormatException("Invalid ID.");
 
-            if (id1 == id2)
+            Book? book1 = library.SearchBook(id1);
+            Book? book2 = library.SearchBook(id2);
+
+            if (book1 == book2)
                 Console.WriteLine("Book 1 == Book 2: True");
             else
                 Console.WriteLine("Book 1 == Book 2: False");
 
-            if (id1 > id2)
+            if (book1 > book2)
                 Console.WriteLine("Book 1 > Book 2: True");
             else
                 Console.WriteLine("Book 1 > Book 2: False");
 
-            if (id1 < id2)
+            if (book1 < book2)
                 Console.WriteLine("Book 1 < Book 2 : True");
             else
                 Console.WriteLine("Book 1 < Book 2: False");

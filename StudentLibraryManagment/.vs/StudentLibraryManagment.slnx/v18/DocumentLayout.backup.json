@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54B2EED1-1BAB-3488-0D82-AF69ABC5DBCA}|StudentLibraryManagment.csproj|c:\\users\\emeris\\documents\\github\\ice-task-1--student-library-management-system\\studentlibrarymanagment\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54B2EED1-1BAB-3488-0D82-AF69ABC5DBCA}|StudentLibraryManagment.csproj|solutionrelative:library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{54B2EED1-1BAB-3488-0D82-AF69ABC5DBCA}|StudentLibraryManagment.csproj|c:\\users\\emeris\\documents\\github\\ice-task-1--student-library-management-system\\studentlibrarymanagment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54B2EED1-1BAB-3488-0D82-AF69ABC5DBCA}|StudentLibraryManagment.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B2EED1-1BAB-3488-0D82-AF69ABC5DBCA}|StudentLibraryManagment.csproj|c:\\users\\emeris\\documents\\github\\ice-task-1--student-library-management-system\\studentlibrarymanagment\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54B2EED1-1BAB-3488-0D82-AF69ABC5DBCA}|StudentLibraryManagment.csproj|solutionrelative:library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54B2EED1-1BAB-3488-0D82-AF69ABC5DBCA}|StudentLibraryManagment.csproj|c:\\users\\emeris\\documents\\github\\ice-task-1--student-library-management-system\\studentlibrarymanagment\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,32 +22,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Library.cs",
               "DocumentMoniker": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\Library.cs",
               "RelativeDocumentMoniker": "Library.cs",
               "ToolTip": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\Library.cs",
               "RelativeToolTip": "Library.cs",
-              "ViewState": "AgIAAA8AAACgm5mZmZktwBAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAACAMjMzM7MtwBAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-10T14:18:22.359Z",
+              "WhenOpened": "2026-08-14T09:36:36.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAACAz8zMzEwiwFYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-10T14:03:42.704Z",
+              "WhenOpened": "2026-08-14T09:36:37.496Z",
               "EditorCaption": ""
             },
             {
@@ -58,9 +58,9 @@
               "RelativeDocumentMoniker": "Book.cs",
               "ToolTip": "C:\\Users\\emeris\\Documents\\GitHub\\Ice-Task-1--Student-Library-Management-System\\StudentLibraryManagment\\Book.cs",
               "RelativeToolTip": "Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAADAmZmZmTk9wEIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-10T13:42:14.941Z",
+              "WhenOpened": "2026-08-14T09:36:37.499Z",
               "EditorCaption": ""
             }
           ]
